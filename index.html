@@ -14,21 +14,27 @@
 		<style>
             /* Additional CSS for image */
             #intro {
-                background-image: url('images/headshot.JPG'); /* Replace 'your-image.jpg' with your image path */
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 0 20px; /* Optional: Adjust padding as needed */
-            }
+				position: relative;
+				background-image: url('images/headshot.JPG'); 
+				background-size: cover;
+				background-position: center top;
+				background-repeat: no-repeat;
+				height: 160vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				padding: 0 20px; 
+				opacity: 0.7;
+			}
 
-            #intro h1, #intro p {
-                color: white; /* Optional: Adjust text color as needed */
-            }
+			#intro-content {
+				position: relative;
+				z-index: 1; /* Ensure text is above the image */
+				color: white; /* Set text color */
+				font-size: 24px; /* Adjust text size */
+				font-weight: bold; /* Adjust text weight */
+			}
         </style>
 	</head>
 	<body class="is-preload">
@@ -47,7 +53,8 @@
 					</div>
 
 					<body>
-						<p> <span style="color: white;"> Welcome to the digital home of Hrishav Sapkota, a passionate and dedicated Computer Science major at Howard University. Here, you'll find a collection of meticulously crafted portfolios showcasing my journey, projects, and insights in the world of technology and software development.
+						<p style="padding: 10px; margin: 10px;">
+						<span style="color: white;"> Welcome to the digital home of Hrishav Sapkota, a passionate and dedicated Computer Science major at Howard University. Here, you'll find a collection of meticulously crafted portfolios showcasing my journey, projects, and insights in the world of technology and software development.
 							As an aspiring developer, I am committed to exploring the realms of computer science, embracing challenges, and contributing to meaningful innovations. Through my portfolios, I invite you to delve into the projects I've undertaken, the skills I've acquired, and the insights I've gleaned along the way.
 							From data analysis and machine learning to web development and beyond, each portfolio is a testament to my curiosity, creativity, and commitment to excellence. Whether you're a fellow enthusiast, a potential collaborator, or simply curious about the fascinating world of technology, I hope you find inspiration and value in exploring my portfolios.
 							Thank you for visiting, and I invite you to embark on this journey with me as we navigate the ever-evolving landscape of computer science and beyond.</span>.</p>
@@ -73,7 +80,7 @@
 							<article class="post featured">
 								<header class="major">
 									<h3><a href="https://github.com/amirince/data_sci_project_1">Unlocking Insights from the Stack Overflow Annual Developer Survey</a></h3>
-									<p><b>Project Description:</b>
+									<p>Project Description:
 										The Stack Overflow Annual Developer Survey serves as a treasure trove of information 
 										for understanding the dynamics of the developer ecosystem worldwide.
 										With this project, I embarked on a journey to extract meaningful insights from
@@ -93,13 +100,14 @@
 										age/gender.
 										4. GitHub Repository: As a final step, I documented my code, findings,
 										and visualizations in a GitHub repository, making it accessible to the wider
-										1
 										community. Leveraging Git/GitHub commands, I ensured version control
-										and collaborative development throughout the project lifecycle.</p>
+										and collaborative development throughout the project lifecycle. </li>
+										</ol>
+									</p>
 								</header>
-								<a href="#" class="image main"><img src="images/so.jpg" alt="" /></a>
+								<a href="https://github.com/amirince/data_sci_project_1/" class="image main"><img src="images/so.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+									<li><a href="https://github.com/amirince/data_sci_project_1/blob/main/presentation_slides.pdf" class="button large">Full Story</a></li>
 								</ul>
 							</article>
 
@@ -107,34 +115,23 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="https://github.com/amirince/data_sci_project_1">Results<br /></a></h2>
+										<h2><a href="https://github.com/amirince/data_sci_project_1">Results - Project 1</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/RE.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://github.com/amirince/data_sci_project_1" class="image fit"><img src="images/RE.jpg" alt=""></a>
+									<p>These are the results of the Public Survey Data Visualization Project.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/amirince/data_sci_project_1" class="button">Data Visualization for Public Survey 2021</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+										<h2><a href="https://github.com/amirince/data_science_proj2">
+										Results - Project 2</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://github.com/amirince/data_science_proj2" class="image fit"><img src="images/pic1.jpg" alt=""></a>
+									<p>These are the results of the Big Mart Global Sales Visualization Project.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/amirince/data_science_proj2" class="button">Full Story</a></li>
 									</ul>
 								</article>
 							</section>
@@ -167,12 +164,12 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>420 Florida Ave NW, Apt A<br />
+								<p>
 								Washington, DC 20001</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(202) 740-1955</a></p>
+								<p><a href="#">(202) 000-1000</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
@@ -190,7 +187,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Hrishav Sapkota 2024</li>
 					</div>
 
 			</div>
